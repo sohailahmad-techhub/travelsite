@@ -1,0 +1,243 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F0CD;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:7D8D86;
+  padding: 15px 30px;
+
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #DA7A7A; 
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Destinations (Home) */
+.destinations {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  background:#BCA88D;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* About Page */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.team {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission {
+  background: #FAE7DA; 
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Contact Page */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 10px;
+  border: none;
+  background: #81BFDA;
+  color: black;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #DA7A7A;
+  color: white;
+}
+
+.contact-info {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.map {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Policies Page */
+.policies {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.policies h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.policies h2 {
+  margin-top: 20px;
+  color: #DA7A7A;
+}
+
+.policies p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #81BFDA;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #81BFDA;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
