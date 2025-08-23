@@ -53,6 +53,7 @@ body {
   color: white;
   text-align: center;
   padding: 120px 20px;
+  border-radius: 50px;
 }
 
 .hero h1 {
@@ -96,7 +97,6 @@ body {
 
 /* Testimonials */
 .testimonials {
-  background:#BCA88D;
   padding: 50px 20px;
   text-align: center;
 }
@@ -128,7 +128,6 @@ body {
 }
 
 .mission {
-  background: #FAE7DA; 
   padding: 40px 20px;
   text-align: center;
 }
@@ -209,7 +208,7 @@ body {
 
 /* Footer */
 footer {
-  background: #81BFDA;
+  background: #b4d8e7;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
@@ -241,3 +240,4 @@ footer {
     align-items: center;
   }
 }
+
